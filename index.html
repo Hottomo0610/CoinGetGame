@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Coin Get Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Unity Products.json", {onProgress: UnityProgress});
+    </script>
+    <link rel="stylesheet" href="C:\Users\hottomo\Unity Products\CoinGetGame\game-page-layout.css">
+  </head>
+  <body>
+    <div class="main-box box">
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">Coin Get Game</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-box box">
+      <div class="rule-box box">
+        <h2>操作方法</h2>
+        <ul>
+          <li>マウスカーソルの移動: 視点が動きます</li>
+          <li>w: 球が前進します</li>
+          <li>s: 球が後退します</li>
+          <li>a: 球が左に動きます</li>
+          <li>d: 球が右に動きます</li>
+        </ul>
+      </div>
+
+      <div class="introduction-box box">
+        <h2>紹介</h2>
+        球を動かして前方にあるコインを取る簡単なゲームです。
+
+        途中でステージ外に落下したらやり直しになります。
+
+      </div>
+    </div>
+  </body>
+</html>
